@@ -52,7 +52,7 @@
         }
 
         #out {
-            width: 300px;
+            width: 50vh;
             height: 300px;
             background: orange;
             font-size: 32px;
@@ -60,6 +60,7 @@
 
         #in {
             /* %= 外層元素大小的百分比 */
+            /* 外層必須要設定高度或寬度,內層的%才有效 */
             /* calc 不同單位的計算,四則運算符號前後都要有空白
              */
             width: calc(50% + 50px);

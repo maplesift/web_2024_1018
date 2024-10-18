@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        #div1 {
+            width: 300px;
+            height: 300px;
+            background: skyblue;
+            font-size: 20px;
+            /* 
+            padding= 內距
+            margin= 外距
+
+            gpt: 
+            padding（內邊距）是指元素內容與其邊框之間的空間。
+            這個空間可以用來控制元素內部內容的顯示方式，
+            使其不會緊貼著邊框，從而增強可讀性和美觀。
+
+            padding    一次設定
+            一個值: 代表上下左右
+            兩個值: 前值:上下 後值:左右
+            三個值: 上,左右,下
+            四個值:上,右,下,左
+
+            padding-top    上面
+            padding-bottom 下面
+            padding-left   左邊
+            padding-right  右邊
+
+            */
+            /* padding-left: 50px; */
+            padding: 10px;
+            /* 
+            ***margin 左右設為 auto 可以置中
+            左邊設定auto可靠右
+            右邊設定auto可靠左
+             */
+            margin: 20px 0 20px auto;
+
+            /* *gpt 
+            border（邊框）是指元素的邊界，用於定義元素的外觀和邊界。
+            邊框可以增強元素的可視性，並幫助區分不同的元素。 */
+
+
+            /* 同時設定四個邊 */
+            /* border: 1px solid black; */
+            /* 單獨設定上邊 */
+            border: 7px dashed black;
+            /* border-bottom: 1px solid rgb(0, 0, 0); */
+            /* 設定下邊 細節方式  */
+            /* border-top-width: 1px;
+            border-top-style: solid;
+            border-top-color: black; */
+
+            /* 外框 不占大小 位置在border以外 */
+            outline: 5px solid rgb(231, 227, 39);
+            /* 外框和 border的間距 */
+            outline-offset: 10px;
+            box-shadow: 2px 0 10px black;
+            /* box-sizing控制寬高設定的範圍
+                content-box 只包含內容區(預設)
+                border-box 包含內容,padding,邊框
+            */
+
+            /*可設定成內容+padding+邊框 = width: 300px;height: 300px;
+              */
+            box-sizing: border-box;
+        }
+
+        /* .border{border-width border-style border-color} */
+
+
+        #div2 {
+            width: 300px;
+            height: 300px;
+            background: rgb(75, 254, 153);
+            font-size: 32px;
+            margin: 30px;
+
+            /* 
+            *** overflow 東西超出內容區時的處理方式
+            auto 自動 
+            visible 看的到
+            hidden 隱藏
+            */
+            overflow: auto;
+            text-align: justify;
+
+            /* text-align: justify; 是一個 CSS 屬性值，用於設置文本的對齊方式。
+            當你使用這個屬性時，文本會在元素的左右邊界之間均勻分佈，
+            形成一個整齊的邊緣。 */
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+    <div id="div2">Lorem ipsum dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Temporibus, veritatis vel architecto tempore aspernatur dicta culpa quos corporis praesentium
+        vero error voluptatum? Ut illum quam voluptatem fuga rem necessitatibus quidem dicta esse, alias ipsa minus
+        dolorem modi autem ullam quae nostrum delectus error. Dolor ducimus officia, laboriosam obcaecati voluptate esse
+        est molestiae? Natus et exercitationem porro nobis dolorem necessitatibus animi molestias numquam iure explicabo
+        recusandae eos dolor omnis, dignissimos maxime, neque possimus eius nam! Vitae est, error dolores placeat
+        provident minima fugiat voluptas, minus velit numquam maiores incidunt, ipsum non repudiandae! Tenetur ducimus
+        beatae earum perferendis quasi ipsa deleniti est?</div>
+
+</body>
+
+</html>
